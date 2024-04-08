@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+}
+.text{
+    color: #576778;
+}
+
+.animated-text {
+    font-size: 3em;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+.animated-text > span {
+    display: inline-block;
+    opacity: 0;
+    animation: slideIn 2s forwards;
+    color: green;
+  }
+
+/* Ключевые кадры для анимации */
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+

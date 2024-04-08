@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  padding: 50px;
+  display: flex;
+  flex-direction: column; 
+  gap: 60px;
+
+  nav{
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    i {
+      color: white;
+      
+    }
+  }
+
+  h2 {
+    color: #23d692;
+    font-size: 18px;
+    animation: american 2s ease 0s 1 alternate-reverse;
+  
+  }
+  h1 {
+    color: aliceblue;
+    font-size: 65px;
+    animation: louise 2s ease 0s 1 normal forwards;
+    
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    li{
+      border-right: 1px solid white;
+      padding-right: 20px;
+    }
+
+    span{
+      font-size: 15px;
+    }
+    a {
+      color: aliceblue;
+      display: flex;
+      flex-direction: column;
+      font-size: 22px;
+      transition: 0.8s;
+    }
+  
+  }
+}
+a:hover{
+  color: #23d692;
+  span{
+    color: grey;
+  }
+}
+
+body {
+  background-image: url(img/My-Post-1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 100vh;
+  animation: slide 8s infinite;
+}
+
+.kenar-div {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.248);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.main-div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  height: 40vh;
+  padding-left: 80px;
+
+  p {
+    width: 20%;
+    color: white;
+    animation: paraqraf 2s ease 0s 1 normal forwards;
+  }
+}
+
+.img-box {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 6px solid rgba(0, 0, 0, 0.101);
+overflow: hidden;
+}
+
+@keyframes slide {
+  100% {
+    background-position: center;
+    background-image: url("img/2685051_Martin-Pope_DTMPL07JPG-LOUISE-HAY_trans_NvBQzQNjv4Bq58RaRS80zGZMbpZLJ5N4PI3cWKfzHGnp0U5m-xObvEc.webp");
+    background-size: cover;
+
+  }
+}
+@keyframes paraqraf {
+	0% {
+		transform: scaleX(0.4);
+		transform-origin: 100% 100%;
+	}
+
+	100% {
+		transform: scaleX(1);
+		transform-origin: 100% 100%;
+	}
+}
+
+@keyframes louise {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(100px);
+	}
+}
+
+@keyframes american {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100px);
+	}
+}
